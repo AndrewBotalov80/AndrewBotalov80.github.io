@@ -7,8 +7,8 @@
     <script>
         function callback(token) {
             console.log(`console token = ${token}`)
-            // window.parent.postMessage(token, "*");
-            parent?.captchaTest(token)
+            window.parent.postMessage(token, "*");
+            // parent?.captchaTest(token)
             // window.dispatchEvent(
             //     new CustomEvent("captchaTest", {
             //         detail: {
